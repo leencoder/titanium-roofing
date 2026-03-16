@@ -1,15 +1,16 @@
 import React from 'react';
 import { Check } from 'lucide-react';
+import planBg from './../assets/images/plan-bg.png';
 
 const PricingCard = ({ title, price, features, isPopular, category }) => (
   <div className={`relative bg-white rounded-lg p-8 border ${isPopular ? 'border-brand-yellow shadow-xl md:scale-105 z-10' : 'border-gray-200 shadow-sm'} flex flex-col h-full transition-transform`}>
     {isPopular && (
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-brand-yellow font-oswald text-brand-dark px-4 py-1 text-sm font-bold tracking-wide">
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-brand-yellow font-condensed text-brand-dark px-4 py-1 text-sm font-bold tracking-wide">
         BEST VALUE
       </div>
     )}
     <div className="text-center mb-6">
-      <h3 className="text-xl font-oswald font-bold uppercase mb-4 text-brand-dark">{title}</h3>
+      <h3 className="text-xl font-condensed font-bold uppercase mb-4 text-brand-dark">{title}</h3>
       <p className="text-sm text-gray-500 mb-2">Ideal for {category} offering thorough maintenance and check-ups.</p>
       <div className="flex items-baseline justify-center gap-1">
         <span className="text-4xl font-bold text-brand-dark">${price}</span>
@@ -26,7 +27,7 @@ const PricingCard = ({ title, price, features, isPopular, category }) => (
       ))}
     </ul>
     
-    <button className={`w-full py-3 font-oswald font-bold tracking-wide uppercase transition-colors ${
+    <button className={`w-full py-3 font-condensed font-bold tracking-wide uppercase transition-colors ${
       isPopular 
         ? 'bg-brand-yellow text-brand-dark hover:bg-yellow-400' 
         : 'bg-brand-dark text-white hover:bg-gray-800'
@@ -64,11 +65,17 @@ const PricingPlans = () => {
   ];
 
   return (
-    <section className="py-24 bg-brand-gray" id="pricing">
+    <section className="py-24 bg-brand-gray relative" id="pricing">
+      {/* Background Image */}
+      <div 
+        className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: `url(${planBg})` }}
+      >
+      </div>
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <div className="text-center mb-16">
           <h4 className="text-sm font-bold tracking-widest text-gray-500 uppercase mb-2">Our Plans</h4>
-          <h2 className="text-4xl md:text-5xl font-oswald font-bold text-brand-dark uppercase mb-4">
+          <h2 className="text-4xl md:text-5xl font-condensed font-bold text-brand-dark uppercase mb-4">
             MONTHLY PLAN OPTIONS
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto font-medium">
@@ -80,7 +87,7 @@ const PricingPlans = () => {
           
           {/* Shingle Roofing */}
           <div className="w-full lg:w-1/2">
-            <h3 className="text-2xl font-oswald font-bold text-center text-brand-dark uppercase tracking-widest mb-10 pb-4 border-b-2 border-brand-yellow inline-block relative left-1/2 -translate-x-1/2">
+            <h3 className="text-2xl font-condensed font-bold text-center text-brand-dark uppercase tracking-widest mb-10 pb-4 border-b-2 border-brand-yellow inline-block relative left-1/2 -translate-x-1/2">
               SHINGLE ROOFING
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
@@ -94,7 +101,7 @@ const PricingPlans = () => {
 
           {/* Tile Roofing */}
           <div className="w-full lg:w-1/2">
-            <h3 className="text-2xl font-oswald font-bold text-center text-brand-dark uppercase tracking-widest mb-10 pb-4 border-b-2 border-brand-yellow inline-block relative left-1/2 -translate-x-1/2">
+            <h3 className="text-2xl font-condensed font-bold text-center text-brand-dark uppercase tracking-widest mb-10 pb-4 border-b-2 border-brand-yellow inline-block relative left-1/2 -translate-x-1/2">
               TILE ROOFING
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">

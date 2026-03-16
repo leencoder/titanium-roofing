@@ -14,8 +14,8 @@ export default {
         }
       },
       fontFamily: {
-        sans: ['Inter', 'sans-serif'],
-        oswald: ['Oswald', 'sans-serif'],
+        sans: ['Roboto', 'sans-serif'],
+        condensed: ['Roboto Condensed', 'sans-serif'],
       }
     },
   },
