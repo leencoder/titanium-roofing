@@ -1,5 +1,9 @@
 import React from 'react';
 import { Home, Phone, Mail, MapPin } from 'lucide-react';
+import logo from '../assets/images/TitaniumRoofing-black.png';
+import facebook from '../assets/images/facebook.svg';
+import instagram from '../assets/images/instagram.svg';
+import linkedin from '../assets/images/Vector.png';
 
 const Footer = () => {
   return (
@@ -10,64 +14,56 @@ const Footer = () => {
           {/* Logo & About */}
           <div>
             <div className="flex items-center gap-2 mb-6">
-              <div className="w-8 h-8 rounded-sm bg-brand-yellow flex items-center justify-center text-brand-dark">
-                <Home size={20} strokeWidth={2.5} />
-              </div>
-              <div className="flex flex-col uppercase font-oswald leading-none">
-                <span className="text-xl font-bold tracking-wider">Titanium</span>
-                <span className="text-xs tracking-[0.2em] font-medium text-brand-yellow mt-0.5">Roofing</span>
-              </div>
+              <img src={logo} alt='logo' />
             </div>
             <p className="text-gray-400 text-sm leading-relaxed mb-6">
-              Protecting homes and businesses with top-tier roofing maintenance. Built on trust, quality, and a commitment to keeping your roof in peak condition.
+              South Florida’s trusted partner for roof maintenance and replacement since 2010.
             </p>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h4 className="font-oswald font-bold text-lg uppercase tracking-wider mb-6 text-white border-l-2 border-brand-yellow pl-3">
-              Quick Links
-            </h4>
-            <ul className="space-y-3 text-sm text-gray-400">
-              <li><a href="#benefits" className="hover:text-brand-yellow transition-colors">Benefits</a></li>
-              <li><a href="#process" className="hover:text-brand-yellow transition-colors">Our Process</a></li>
-              <li><a href="#pricing" className="hover:text-brand-yellow transition-colors">Pricing Plans</a></li>
-              <li><a href="#faq" className="hover:text-brand-yellow transition-colors">FAQ</a></li>
-            </ul>
-          </div>
-
-          {/* Services */}
-          <div>
-            <h4 className="font-oswald font-bold text-lg uppercase tracking-wider mb-6 text-white border-l-2 border-brand-yellow pl-3">
+            <h4 className="text-xl tracking-wider mb-6 text-white">
               Services
             </h4>
             <ul className="space-y-3 text-sm text-gray-400">
-              <li><a href="#services" className="hover:text-brand-yellow transition-colors">Residential Maintenance</a></li>
-              <li><a href="#services" className="hover:text-brand-yellow transition-colors">Commercial Maintenance</a></li>
-              <li><a href="#services" className="hover:text-brand-yellow transition-colors">Gutter Cleaning</a></li>
-              <li><a href="#services" className="hover:text-brand-yellow transition-colors">Emergency Repairs</a></li>
+              <li><a href="#" className="hover:text-brand-yellow transition-colors">Roof Maintenance Plans</a></li>
+              <li><a href="#" className="hover:text-brand-yellow transition-colors">Roof Replacement</a></li>
+              <li><a href="#" className="hover:text-brand-yellow transition-colors">Emergency Repairs</a></li>
+              <li><a href="#" className="hover:text-brand-yellow transition-colors">Privacy Policy</a></li>
+              <li><a href="#" className="hover:text-brand-yellow transition-colors">Terms & Conditions</a></li>
+              <li><a href="#" className="hover:text-brand-yellow transition-colors">Subscription Policy</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 className="text-xl tracking-wider mb-6 text-white">
+              Services
+            </h4>
+            <ul className="space-y-3 text-sm text-gray-400">
+              <li><a href="#" className="hover:text-brand-yellow transition-colors">Miami-Dade Country</a></li>
+              <li><a href="#" className="hover:text-brand-yellow transition-colors">Broward Country</a></li>
+              <li><a href="#" className="hover:text-brand-yellow transition-colors">Palm Beach Country</a></li>
+              <li><a href="" className="hover:text-brand-yellow transition-colors">Monroe Country</a></li>
             </ul>
           </div>
 
           {/* Contact */}
           <div>
-            <h4 className="font-oswald font-bold text-lg uppercase tracking-wider mb-6 text-white border-l-2 border-brand-yellow pl-3">
-              Contact Us
+            <h4 className="text-xl tracking-wider mb-6 text-white">
+              Connect
             </h4>
-            <ul className="space-y-4 text-sm text-gray-400">
-              <li className="flex items-start gap-3">
-                <MapPin size={18} className="text-brand-yellow shrink-0 mt-0.5" />
-                <span>123 Roofing Lane, Suite 100<br/>Cityville, ST 12345</span>
+            <ul className="flex gap-4 mb-3">
+              <li>
+                <img src={facebook} alt='Facebook' />
               </li>
-              <li className="flex items-center gap-3">
-                <Phone size={18} className="text-brand-yellow shrink-0" />
-                <span>1-800-ROOFING</span>
+              <li>
+                <img src={instagram} alt='Instagram' />
               </li>
-              <li className="flex items-center gap-3">
-                <Mail size={18} className="text-brand-yellow shrink-0" />
-                <span>info@titaniumroofing.com</span>
+              <li>
+                <img src={linkedin} alt='Linkedin' />
               </li>
             </ul>
+            <p className='text-gray-400'>License #CCC12345567 Fully Insured</p>
           </div>
 
         </div>

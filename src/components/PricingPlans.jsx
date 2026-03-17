@@ -66,16 +66,10 @@ const PricingPlans = () => {
 
   return (
     <section className="py-24 bg-brand-gray relative" id="pricing">
-      {/* Background Image */}
-      <div 
-        className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${planBg})` }}
-      >
-      </div>
-      <div className="max-w-7xl mx-auto px-6 md:px-12">
+      <div className="max-w-7xl mx-auto px-6 md:px-12 z-10">
         <div className="text-center mb-16">
-          <h4 className="text-sm font-bold tracking-widest text-gray-500 uppercase mb-2">Our Plans</h4>
-          <h2 className="text-4xl md:text-5xl font-condensed font-bold text-brand-dark uppercase mb-4">
+          <h4 className="tracking-widest font-condensed text-center text-gray-500 uppercase mb-3 italic">Our Plans</h4>
+          <h2 className="text-3xl md:text-5xl font-condensed font-bold text-gray-800 uppercase text-center mb-16 tracking-wide">
             MONTHLY PLAN OPTIONS
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto font-medium">
@@ -83,10 +77,10 @@ const PricingPlans = () => {
           </p>
         </div>
 
-        <div className="flex flex-col lg:flex-row gap-12 lg:gap-8">
+        <div className="flex flex-col gap-12 lg:gap-8 max-w-4xl mx-auto">
           
           {/* Shingle Roofing */}
-          <div className="w-full lg:w-1/2">
+          <div className="w-full">
             <h3 className="text-2xl font-condensed font-bold text-center text-brand-dark uppercase tracking-widest mb-10 pb-4 border-b-2 border-brand-yellow inline-block relative left-1/2 -translate-x-1/2">
               SHINGLE ROOFING
             </h3>
@@ -100,7 +94,7 @@ const PricingPlans = () => {
           <div className="hidden lg:block w-px bg-gray-300"></div>
 
           {/* Tile Roofing */}
-          <div className="w-full lg:w-1/2">
+          <div className="w-full">
             <h3 className="text-2xl font-condensed font-bold text-center text-brand-dark uppercase tracking-widest mb-10 pb-4 border-b-2 border-brand-yellow inline-block relative left-1/2 -translate-x-1/2">
               TILE ROOFING
             </h3>

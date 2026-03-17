@@ -24,7 +24,7 @@ const ROISection = () => {
     <section className="bg-brand-yellow py-20 px-6">
       <div className="max-w-7xl mx-auto text-center">
         <h4 className="text-sm font-bold tracking-widest text-brand-dark uppercase mb-2">The ROI</h4>
-        <h2 className="text-4xl md:text-5xl font-oswald font-bold text-brand-dark uppercase mb-6">
+        <h2 className="text-4xl md:text-5xl font-condensed font-bold text-brand-dark uppercase mb-6">
           YOUR INVESTMENT, YOUR SAVINGS
         </h2>
         <p className="text-brand-dark/80 text-lg md:text-xl font-medium mb-16 max-w-2xl mx-auto">
@@ -37,7 +37,7 @@ const ROISection = () => {
               <div className="mb-6 opacity-90">
                 {stat.icon}
               </div>
-              <h3 className="text-5xl md:text-6xl font-bold font-oswald mb-4 tracking-tight">
+              <h3 className="text-5xl md:text-6xl font-bold font-condensed mb-4 tracking-tight">
                 {stat.value}
               </h3>
               <p className="text-lg font-semibold tracking-wide uppercase max-w-[200px]">

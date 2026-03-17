@@ -8,7 +8,7 @@ const FAQItem = ({ question, answer, isOpen, onClick }) => {
         className="w-full flex items-center justify-between text-left focus:outline-none group"
         onClick={onClick}
       >
-        <span className="text-lg font-bold font-oswald uppercase text-brand-dark group-hover:text-brand-yellow transition-colors pr-8">
+        <span className="text-lg font-bold font-condensed uppercase text-brand-dark group-hover:text-brand-yellow transition-colors pr-8">
           {question}
         </span>
         <span className="text-brand-yellow shrink-0">
@@ -31,12 +31,12 @@ const FAQSection = () => {
 
   const faqs = [
     {
-      question: "What does roof maintenance include?",
-      answer: "Our maintenance plan includes a comprehensive inspection, clearing debris from the roof surface and gutters, checking for signs of water damage, inspecting flashings, and making minor seal repairs to prevent future leaks."
+      question: "Is the maintenance plan transferable if sell my home?",
+      answer: "Essential plan members receive priority scheduling during business hours. Premium plan members get 24/7emergency support with guaranteed response within 4 hours, ensuring your home is protected no matter when disaster strikes."
     },
     {
       question: "How often should I have my roof inspected?",
-      answer: "We recommend at least one thorough inspection per year, preferably in the fall before winter weather hits. However, properties with heavy tree coverage or in extreme weather zones may benefit from bi-annual inspections."
+      answer: "Essential plan members receive priority scheduling during business hours. Premium plan members get 24/7emergency support with guaranteed response within 4 hours, ensuring your home is protected no matter when disaster strikes."
     },
     {
       question: "Can I transfer my maintenance plan if I sell my home?",
@@ -54,9 +54,9 @@ const FAQSection = () => {
 
   return (
     <section className="py-24 bg-white" id="faq">
-      <div className="max-w-4xl mx-auto px-6 md:px-12">
-        <h4 className="text-sm font-bold tracking-widest text-center text-gray-500 uppercase mb-2">Got Questions?</h4>
-        <h2 className="text-3xl md:text-5xl font-oswald font-bold text-brand-dark uppercase text-center mb-16 leading-tight">
+      <div className="max-w-7xl mx-auto px-6 md:px-12">
+        <h4 className="tracking-widest font-condensed text-center text-gray-500 uppercase mb-3 italic">Frequently Asked Questions</h4>
+        <h2 className="text-3xl md:text-5xl font-condensed font-bold text-gray-800 uppercase text-center mb-16 tracking-wide">
           EVERYTHING YOU NEED TO KNOW ABOUT OUR ROOF MAINTENANCE PLANS
         </h2>
 

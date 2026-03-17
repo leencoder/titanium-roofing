@@ -9,7 +9,6 @@ import ComparisonTable from './components/ComparisonTable';
 import PreventativeMaintenance from './components/PreventativeMaintenance';
 import ConsequencesSection from './components/ConsequencesSection';
 import FAQSection from './components/FAQSection';
-import ServicesGrid from './components/ServicesGrid';
 import Footer from './components/Footer';
 
 function App() {
@@ -25,7 +24,6 @@ function App() {
       <PreventativeMaintenance />
       <ConsequencesSection />
       <FAQSection />
-      <ServicesGrid />
       <Footer />
     </div>
   );

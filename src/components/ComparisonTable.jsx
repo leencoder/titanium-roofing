@@ -37,14 +37,14 @@ const ComparisonTable = () => {
   return (
     <section className="py-24 bg-white">
       <div className="max-w-5xl mx-auto px-6 md:px-12 text-center">
-        <h4 className="text-sm font-bold tracking-widest text-gray-500 uppercase mb-2">Compare The Value</h4>
-        <h2 className="text-3xl md:text-4xl lg:text-5xl font-oswald font-bold text-brand-dark uppercase mb-16 leading-tight max-w-3xl mx-auto">
+        <h4 className="tracking-widest font-condensed text-center text-gray-500 uppercase mb-3 italic">Compare The Value</h4>
+        <h2 className="text-3xl md:text-5xl font-condensed font-bold text-gray-800 uppercase text-center mb-16 tracking-wide">
           SEE THE DIFFERENCE OUR MAINTENANCE PLAN MAKES FOR YOUR HOME & WALLET
         </h2>
 
         <div className="bg-white rounded-lg shadow-xl overflow-hidden border border-gray-100">
           {/* Header */}
-          <div className="grid grid-cols-3 text-sm md:text-base font-bold tracking-wider uppercase font-oswald">
+          <div className="grid grid-cols-3 text-sm md:text-base font-bold tracking-wider uppercase font-condensed">
             <div className="p-6 bg-brand-dark text-white border-r border-gray-700 flex items-center justify-center">
               Features
             </div>
